@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 
 import Layout from '../../components/Layout/index'
 
@@ -7,11 +6,10 @@ import Layout from '../../components/Layout/index'
 //Shows score,contest logged in, currently going contest etc 
 
 const UserPage = (props) =>{
-    const router = useRouter()
 
     return(
         <Layout>
-            <h1>Welcome User {router.query.id}</h1>
+            <h1>Welcome User</h1>
         </Layout>
     )
 }
